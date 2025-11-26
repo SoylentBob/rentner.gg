@@ -1,0 +1,38 @@
+* {
+    --rentner-red: #622b19;
+    --rentner-yellow: #e9d3a8;
+    --rentner-gold: #b38647;
+    --rentner-black: #1c130a;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: var(--rentner-black);
+    color: var(--rentner-yellow);
+    margin: 0px;
+    display: grid;
+    align-content: start;
+    grid-template-rows: auto auto;
+    height: 100vh;
+}
+
+.menu {
+    width: 100%;
+    background-color: var(--rentner-red);
+    z-index: 10000;
+}
+
+.menu img {
+    max-height: 80px;
+}
+
+.landing-content {
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    background-color: var(--rentner-gold);
+}
+
+.landing-content img {
+    max-width: 256px;
+}
