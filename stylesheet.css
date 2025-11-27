@@ -3,6 +3,30 @@
     --rentner-yellow: #e9d3a8;
     --rentner-gold: #b38647;
     --rentner-black: #1c130a;
+
+    --text-size-1: 12px;
+    --text-size-2: 14px;
+    --text-size-3: 16px;
+    --text-size-4: 18px;
+    --text-size-5: 20px;
+    --text-size-6: 24px;
+    --text-size-7: 30px;
+    --text-size-8: 36px;
+    --text-size-9: 48px;
+    --text-size-10: 60px;
+    --text-size-11: 72px;
+
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    --space-xss: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1.25rem;
+    --space-lg: 2rem;
+    --space-xl: 3.25rem;
+    --space-xxl: 5.25rem;
 }
 
 body {
@@ -14,12 +38,30 @@ body {
     align-content: start;
     grid-template-rows: auto auto;
     height: 100vh;
+
+    font-weight: var(--font-weight-normal);
+    font-size: var(--text-size-5);
 }
 
 .menu {
-    width: 100%;
     background-color: var(--rentner-red);
     z-index: 10000;
+    display: flex;
+}
+
+.menu nav {
+    align-self: center;
+}
+
+.menu nav ol {
+    display: flex;
+    gap: var(--space-sm)
+}
+
+.menu nav ol li {
+    display: inline;
+    list-style-type: none;
+    font-size: var(--text-size-6);
 }
 
 .menu img {
@@ -35,4 +77,21 @@ body {
 
 .landing-content img {
     max-width: 256px;
+}
+
+.landing-content p {
+    max-width: 800px;
+    margin: var(--space-lg);
+    color: var(--rentner-yellow);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: var(--text-size-9)
+}
+
+a, a:visited {
+    color: var(--rentner-yellow);
+    text-decoration: none;
+    font-weight: var(--font-weight-normal);
 }
